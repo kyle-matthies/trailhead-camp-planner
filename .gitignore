@@ -1,0 +1,74 @@
+# Secrets and local configuration
+.env*
+!.env.example
+**/.env*
+!**/.env.example
+*.pem
+*.key
+*.p12
+credentials*.json
+service-account*.json
+.mcp.json
+
+# Dependencies and generated output
+node_modules/
+dist/
+build/
+out/
+coverage/
+.cache/
+.turbo/
+.next/
+*.tsbuildinfo
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Supabase local state, branches, and database dumps
+supabase/.temp/
+supabase/.branches/
+supabase/.windsurf/
+supabase/.env.local
+backups/
+*.sql.gz
+*.dump
+
+# Local uploads and media
+uploads/
+media/
+frontend/public/uploads/
+supabase/storage/
+
+# Editor, agent, and transcript artifacts
+.DS_Store
+.idea/
+.vscode/
+.fleet/
+.cursor/
+.claude/
+.codex/
+.specstory/
+*.swp
+*.swo
+*~
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Hosting and deployment state
+.vercel/
+.netlify/
+.fly/
+
+.gstack/

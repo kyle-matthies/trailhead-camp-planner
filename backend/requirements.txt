@@ -1,0 +1,9 @@
+# Direct runtime and test dependencies. Compile the pinned lock with the command
+# recorded at the top of requirements.lock.
+fastapi[standard]>=0.135.1,<0.136
+google-genai>=1.0.0,<2
+openai>=2.14.0,<3
+python-dotenv>=1.2.2,<2
+httpx>=0.28.1,<0.29
+supabase>=2.10.0,<3
+pytest>=9.0.3,<10

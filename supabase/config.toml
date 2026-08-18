@@ -1,0 +1,21 @@
+# Local-only Supabase configuration. This file is intentionally not linked to a
+# hosted project; use your own project reference if you choose to run connected.
+project_id = "trailhead-camp-planner"
+
+[api]
+port = 54321
+
+[db]
+port = 54322
+shadow_port = 54320
+major_version = 17
+
+[studio]
+port = 54323
+
+[local_smtp]
+enabled = true
+port = 54324
+
+[analytics]
+port = 54327

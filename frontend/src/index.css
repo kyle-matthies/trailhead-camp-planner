@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+
+  body {
+    @apply bg-sand-50 text-stone-900 font-sans antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-lg bg-forest-600 text-white font-medium
+           hover:bg-forest-700 transition-colors duration-200 focus:outline-none focus:ring-2
+           focus:ring-forest-500 focus:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center rounded-lg border-2 border-stone-300 text-stone-700
+           font-medium hover:bg-stone-50 transition-colors duration-200 focus:outline-none focus:ring-2
+           focus:ring-forest-500 focus:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-white rounded-xl border border-stone-200 shadow-sm;
+  }
+}
+
+/* Markdown content styling */
+.prose h1 { @apply text-2xl font-heading font-bold mb-4 mt-6; }
+.prose h2 { @apply text-xl font-heading font-bold mb-3 mt-5; }
+.prose h3 { @apply text-lg font-heading font-semibold mb-2 mt-4; }
+.prose p { @apply mb-3 leading-relaxed; }
+.prose ul { @apply list-disc pl-6 mb-3 space-y-1; }
+.prose ol { @apply list-decimal pl-6 mb-3 space-y-1; }
+.prose li { @apply leading-relaxed; }
+.prose strong { @apply font-semibold text-stone-900; }
+.prose code { @apply bg-stone-100 px-1.5 py-0.5 rounded text-sm font-mono; }
+.prose blockquote { @apply border-l-4 border-forest-300 pl-4 italic text-stone-600 my-3; }
