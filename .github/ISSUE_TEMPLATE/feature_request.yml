@@ -1,0 +1,29 @@
+name: Feature request
+description: Propose an improvement grounded in a group-planning need.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: Who has the problem, when does it occur, and what workaround do they use today?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Describe the outcome without prescribing an implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Roles, privacy, or offline constraints
+      description: Note permission boundaries, sensitive data, or field-use conditions this affects.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or examples
+      description: Use fictional or anonymized examples only.
